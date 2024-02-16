@@ -17,8 +17,8 @@ const Reviews = lazy(() =>
 const App = () => {
   return (
     <Routes>
-      <Route path="/goit-react-hw-05-movies" element={<SharedLayout />}>
-        <Route path="home" element={<HomePage />} />
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<HomePage />} />
         <Route path="movies" element={<MoviesPage />} />
         <Route path="movies/:movieId" element={<MovieDetailsPage />}>
           <Route path="cast" element={<Cast />} />
