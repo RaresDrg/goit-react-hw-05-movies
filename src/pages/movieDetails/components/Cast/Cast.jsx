@@ -35,7 +35,7 @@ const Cast = () => {
     };
 
     getCast();
-  }, []);
+  }, [movieId]);
 
   return (
     <section className="container">

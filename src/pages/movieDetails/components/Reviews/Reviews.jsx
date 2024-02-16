@@ -35,7 +35,7 @@ const Reviews = () => {
     };
 
     getReviews();
-  }, []);
+  }, [movieId]);
 
   return (
     <section className="container">

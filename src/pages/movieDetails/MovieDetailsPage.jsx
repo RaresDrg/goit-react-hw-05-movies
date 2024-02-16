@@ -36,7 +36,7 @@ const MovieDetailsPage = () => {
     };
 
     getDetails();
-  }, []);
+  }, [movieId]);
 
   return (
     <>
