@@ -9,7 +9,10 @@ const MoviesList = ({ movies }) => {
     <ul className={styles.trendingList}>
       {movies.map(item => (
         <li key={item.id}>
-          <Link to={`/movies/${item.id}`} state={{ from: location }}>
+          <Link
+            to={`/goit-react-hw-05-movies/movies/${item.id}`}
+            state={{ from: location }}
+          >
             {item.title || item.name}
           </Link>
         </li>

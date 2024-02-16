@@ -4,7 +4,8 @@ import styles from './BackLink.module.css';
 
 const BackLink = () => {
   const location = useLocation();
-  const backLinkHref = location.state?.from ?? `/movies`;
+  const backLinkHref =
+    location.state?.from ?? `/goit-react-hw-05-movies/movies`;
 
   return (
     <div className={styles.backLink}>
